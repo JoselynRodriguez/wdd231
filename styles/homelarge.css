@@ -52,6 +52,11 @@ header {
     font-size: 25px;
 }
 
-
+.courselist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  gap: 1rem;
 }
 
