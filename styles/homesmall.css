@@ -80,6 +80,7 @@ footer{
     padding: 1rem 10px;
     text-align: center;
     color: rgb(50, 7, 90);
+    font-size: 1.3rem;
 }
 .social {
     display: flex;
@@ -103,3 +104,111 @@ footer{
 .social a:hover{
     background-color: rgb(50, 7, 90);
 }
+
+section {
+background-color: antiquewhite;
+}
+.studentphoto img {
+    width: 150px;
+}
+
+.coursebuttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  padding: 0.8rem 1.3rem;
+  background-color: rgb(116, 14, 211);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 2rem;
+  cursor: pointer;
+
+}
+
+button:hover {
+  background-color: #e420ca;
+}
+#credittotal {
+  text-align: center;
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.courselist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.course-card {
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-left: 8px solid;
+  position: relative;
+}
+
+.course-card:hover {
+  transform: scale(1.01);
+}
+
+.course-card.completed {
+  background-color: #d4f8e8; 
+  border-left-color: #28a745;
+  box-shadow: 0 0 10px rgba(40, 167, 69, 0.3);
+}
+
+.course-card.completed::before {
+  content: '✓';
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: #28a745;
+  font-weight: bold;
+}
+.course-card:not(.completed) {
+  background-color: #f0f0f0;
+  border-left-color: #999;
+}
+
+/* Sección "About Me" */
+.aboutme {
+  margin: 1rem 0;
+}
+
+.aboutme h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.aboutme p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Foto del estudiante */
+.studentphoto {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+h2 {
+  width: 100%;
+  height: 35px;
+  background-color: rgb(50, 7, 90);
+  color: aliceblue;
+  margin: 1rem 0;
+  text-align: center;
+
+}
+
+

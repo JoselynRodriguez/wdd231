@@ -18,9 +18,9 @@
     <header>
         <img src="images/house.svg" alt="site logo" width="512" height="512">
         <span>Joselyn Rodriguez</span>
-        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <button id="navbutton" class="hamburger" aria-label="navigation"></button>
     </header>
-    <nav id="nav-bar" class="navigation">
+    <nav id="navbar" class="navigation">
         <ul>
             <li class="current"><a href="#">Home</a></li>
             <li><a href="#">Chamber Assigment</a></li>
@@ -29,9 +29,26 @@
     </nav>
     <main>
         <h1>Home</h1>
-        <section></section>
-        <section></section>
-        <section></section>
+        <div class="content">
+            <section class="aboutme">
+                <h2>About Me</h2>
+                <p>My name is Joselyn Rodriguez.I live in Lima, Peru. I really like technology. This is my third term taking programming courses. Besides technology, I also like learning new languages. I'm currently studying Chinese, which is quite difficult for me, but I keep trying and trying to learn. </p>
+            </section>
+            <section class="studentphoto">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt="My Photo">
+            </section>
+            <section class="certificates">
+                <h2>Web Certificate Courses</h2>
+                <div class="coursebuttons">
+                    <button id="everything">All</button>
+                    <button id="web">WDD</button>
+                    <button id="programing">CSE</button>
+                </div>
+                <div id="courselist" class="courselist"></div>
+                <p id="credittotal">The total credits for course listed below is 0</p>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="social">

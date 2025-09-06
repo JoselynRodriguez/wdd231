@@ -25,4 +25,33 @@ header {
     border: none
 }
 
+.content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr;
 }
+
+.aboutme {
+    grid-area: 1/1/2/1;
+}
+
+.studentphoto {
+    grid-area: 1/2/1/2;
+
+}
+.studentphoto img{
+    width: 400px;
+
+}
+.certificates {
+     grid-area: 2/1/2/3;
+}
+
+.aboutme p{
+    padding-left: 1.5rem;
+    font-size: 25px;
+}
+
+
+}
+
