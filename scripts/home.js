@@ -106,7 +106,7 @@ function displayCourses(courseArray) {
 
   courseArray.forEach(course => {
     const card = document.createElement('div');
-    card.className = 'course-card' + (course.completed ? ' completed': '');
+    card.className = 'course-card' + (course.completed ? ' completed' : '' );
 
     card.innerHTML = `
       <h3>${course.subject} ${course.number} </h3>

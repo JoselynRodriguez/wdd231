@@ -6,10 +6,10 @@
 header {
   display: grid;
   grid-template-columns: 24px auto 44px;
-  padding: 8px 1px 6px 10px;
+  padding: 10px 2px 6px 12px;
   align-items: end;
   border-bottom: solid 1px white;
-  column-gap: 8px;
+  column-gap: 10px;
   background-color: rgb(233, 197, 197);
 }
 
@@ -21,7 +21,7 @@ header img {
 }
 
 header span {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color:rgb(50, 7, 90)
 }
 
@@ -118,7 +118,8 @@ background-color: antiquewhite;
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2.5rem;
 }
 
 button {
@@ -138,7 +139,7 @@ button:hover {
 #credittotal {
   text-align: center;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   color: black;
 }
@@ -147,12 +148,12 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   
 }
 
 .course-card {
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   border-left: 8px solid;
@@ -178,10 +179,12 @@ button:hover {
   font-size: 1.5rem;
   color: #28a745;
   font-weight: bold;
+   background-color: #d4f8e8; 
+  border-left-color: #28a745;
 }
 
-.course-card.completed.not {
-     background-color: #f0f0f0;
+.course-card:not(.completed) {
+    background-color: #f0f0f0;
     border-left-color: #999;
 }
 .aboutme {
