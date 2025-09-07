@@ -45,6 +45,7 @@ header {
 }
 .certificates {
      grid-area: 2/1/2/3;
+
 }
 
 .aboutme p{
@@ -58,6 +59,9 @@ header {
   grid-template-rows: 1fr 1fr;
   align-items: center;
   gap: 1rem;
+}
+.content{
+    position: relative;
 }
 
 }

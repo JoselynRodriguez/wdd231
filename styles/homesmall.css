@@ -6,7 +6,7 @@
 header {
   display: grid;
   grid-template-columns: 24px auto 44px;
-  padding: 5px 0 5px 10px;
+  padding: 8px 1px 6px 10px;
   align-items: end;
   border-bottom: solid 1px white;
   column-gap: 8px;
@@ -21,7 +21,7 @@ header img {
 }
 
 header span {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color:rgb(50, 7, 90)
 }
 
@@ -60,10 +60,12 @@ header span {
     color:rgb(50, 7, 90);
     text-decoration: none;
     border-bottom: solid 1px white;
+    font-size: 20px;
 }
 
 .navigation li.current{
     background-color: rgb(210, 183, 236);
+    font-size: 20px ;
 }
 
 .navigation a:hover{
@@ -136,7 +138,7 @@ button:hover {
 #credittotal {
   text-align: center;
   font-style: italic;
-  font-size: 1rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: black;
 }
@@ -146,6 +148,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  
 }
 
 .course-card {
@@ -154,6 +157,7 @@ button:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   border-left: 8px solid;
   position: relative;
+    
 }
 
 .course-card:hover {
@@ -175,18 +179,16 @@ button:hover {
   color: #28a745;
   font-weight: bold;
 }
-.course-card:not(.completed) {
-  background-color: #f0f0f0;
-  border-left-color: #999;
-}
 
-/* Sección "About Me" */
+.course-card.completed.not {
+     background-color: #f0f0f0;
+    border-left-color: #999;
+}
 .aboutme {
   margin: 1rem 0;
 }
 
 .aboutme h2 {
-  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -195,7 +197,7 @@ button:hover {
   line-height: 1.5;
 }
 
-/* Foto del estudiante */
+
 .studentphoto {
   margin: 1rem 0;
   text-align: center;
