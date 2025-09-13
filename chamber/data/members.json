@@ -1,0 +1,39 @@
+[
+  {
+    "name": "Panadería Rosmeri",
+    "address": "Av. Lima 123, San Martín de Porres",
+    "phone": "+51 987 654 321",
+    "website": "https://panaderiarosmeri.pe",
+    "image": "images/panaderia.png",
+    "membership": 3,
+    "description": "Delicious baked goods made fresh daily."
+  },
+  {
+    "name": "Courier Express",
+    "address": "Jr. Comercio 456, Lima",
+    "phone": "+51 912 345 678",
+    "website": "https://courierexpress.pe",
+    "image": "images/courier.png",
+    "membership": 2,
+    "description": "Fast and reliable delivery services."
+  }
+  {
+    "name": "Courier Express",
+    "address": "Jr. Comercio 456, Lima",
+    "phone": "+51 912 345 678",
+    "website": "https://courierexpress.pe",
+    "image": "images/courier.png",
+    "membership": 2,
+    "description": "Fast and reliable delivery services."
+  }
+  
+  {
+    "name": "Courier Express",
+    "address": "Jr. Comercio 456, Lima",
+    "phone": "+51 912 345 678",
+    "website": "https://courierexpress.pe",
+    "image": "images/courier.png",
+    "membership": 2,
+    "description": "Fast and reliable delivery services."
+  }
+]
