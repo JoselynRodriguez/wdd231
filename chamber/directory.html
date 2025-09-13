@@ -7,9 +7,9 @@
     <meta name="description" content="Chamber Directory| WDD231">
     <meta name="author" content="Joselyn Rodriguez">
     <meta property="og:title" content="Chamber Directory - Lima">
-    <meta property="og:description" content="A brief presentation of Joselyn Rodriguez. We can see her taken courses and the needed courses to get web development certificate. The Chamber Assigment and the final project can be seen in the web page.">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
+    <meta property="og:description" content="This is the directory of a Chamber Comerce where we can see the information of diferent companies of the city of Lima, Peru. All the information of this companies are show in this directory.">
+    <meta property="og:image" content="https://media.istockphoto.com/id/1143524635/photo/aerial-view-of-lima.jpg?s=612x612&w=0&k=20&c=t5ufnvKmqQDZsKLlcs6YoYZv2jJcCfXMd5zhf1aIDOY=">
+    <meta property="og:url" content="https://joselynrodriguez.github.io/wdd231/chamber/directory">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Playwrite+AU+QLD:wght@100..400&family=Roboto&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
@@ -21,13 +21,44 @@
 </head>
 <body>
     <header>
-        <h1>Chamber Comerce</h1>
+         <h1>Lima Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
     </header>
     <main>
+    <section class="view">
+      <button id="grid">Grid View</button>
+      <button id="list">List View</button>
+    </section>
 
-    </main>
-    <footer>
+    <section id="members" class="grid">
+    </section>
+  </main>
+  <footer>
+  <div class="container">
+    <div class="footer">
+      <h3>Lima Chamber of Commerce</h3>
+      <p>Av. Lima 123<br>San Martín de Porres, Lima, Peru<br>info@limachamber.org<br>+51 123 456 789</p>
+    </div>
 
-    </footer>
+    <div class="icons">
+            <a href="https://www.linkedin.com/in/joselyn-rodriguez-r-649410263" target="_blank"><img src="images/linkedin.svg" alt="LinkdIn" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/instagram.svg" alt="instagram" width="16" height="16"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+    </div>
+
+    <div class="footer-right">
+      <p>WDD 231 Class Project<br>Joselyn Rodriguez<br>©️<span id="currentyear"></span> Lima Chamber of Commerce</p>
+      <p><span id="lastModified"></span></p>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
