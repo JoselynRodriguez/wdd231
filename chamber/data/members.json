@@ -16,7 +16,8 @@
     "image": "images/courier.png",
     "membership": 2,
     "description": "Fast and reliable delivery services."
-  }
+  },
+  
   {
     "name": "Courier Express",
     "address": "Jr. Comercio 456, Lima",
@@ -25,7 +26,7 @@
     "image": "images/courier.png",
     "membership": 2,
     "description": "Fast and reliable delivery services."
-  }
+  },
   
   {
     "name": "Courier Express",

@@ -5,6 +5,14 @@ yearSpan.textContent = currentYear;
 const lastModified = document.getElementById("lastModified");
 lastModified.textContent = `Last Modified: ${document.lastModified}`;
 
+const navButton = document.querySelector('#navbutton');
+const navBar = document.querySelector('#navbar');
+
+navButton.addEventListener('click', () => {
+    navButton.classList.toggle('show');
+    navBar.classList.toggle('show');
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("members");
   const gridBtn = document.getElementById("grid");
@@ -44,8 +52,4 @@ document.addEventListener("DOMContentLoaded", () => {
     container.classList.add("list");
     container.classList.remove("grid");
   });
-
-  document.getElementById("lastModified").textContent = document.lastModified;
-
-  loadMembers();
 });
