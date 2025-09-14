@@ -1,0 +1,49 @@
+*{
+    font-family:"josefin Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 24px auto 44px;
+  padding: 10px 2px 6px 12px;
+  align-items: end;
+  border-bottom: solid 1px white;
+  column-gap: 10px;
+  background-color: rgb(233, 197, 197);
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.5rem;
+    color:rgb(50, 7, 90)
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color:rgb(50, 7, 90);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hamburger::before {
+  content: "\2630";
+  font-size: 2rem;
+}
+.hamburger.show::before {
+  content: "\00D7";
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
