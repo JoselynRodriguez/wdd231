@@ -52,4 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
     container.classList.add("list");
     container.classList.remove("grid");
   });
+
+  loadMembers();
 });
