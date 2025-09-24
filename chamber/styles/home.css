@@ -86,7 +86,7 @@ button:hover {
 }
 
 div img {
-    max-width: fit-content;
+    max-width: 40rem;
     max-height: fit-content;
     align-items: center;
     display: flex;
