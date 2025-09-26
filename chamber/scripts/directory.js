@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <p>${member.description}</p>
         <p><strong>Address:</strong> ${member.address}</p>
         <p><strong>Phone:</strong> ${member.phone}</p>
-        <a href="${member.website}" target="_blank">Visit Website</a>
+        <a href="${member.website}" target="_blank">${member.website}</a>
         <p class="membership level-${member.membership}">Membership Level: ${member.membership}</p>
       `;
       container.appendChild(card);
