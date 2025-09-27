@@ -13,6 +13,14 @@ header {
   background-color: rgb(233, 197, 197);
 }
 
+h1 {
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  color: rgb(50, 7, 90);;
+}
+
 footer{
   background-color: rgb(233, 197, 197);
   display: flex;
