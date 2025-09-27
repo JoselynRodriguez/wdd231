@@ -25,5 +25,31 @@
         border: none;
         font-size: 1.5rem;
     }
+    .container {
+    width: 750px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .icons {
+    display: flex;
+    flex-direction: column;
+    size: 150px;
+    align-items: center;
+    padding: 2rem;
+    
+    }
+
+    .icons img{
+    width: auto;
+    height: 120%;
+    padding: 0.5rem;
+    }
+
+    .footeright{
+    width: 250px;
+    }
+
+
 
 }

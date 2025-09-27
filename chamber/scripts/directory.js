@@ -42,13 +42,15 @@ function displayMembers(members) {
     card.classList.add('member-card');
 
     card.innerHTML = `
-      <img src="${member.image}" alt="Logo de ${member.name}" loading="lazy">
-      <h3>${member.name}</h3>
-      <p><strong>Dirección:</strong> ${member.address}</p>
-      <p><strong>Teléfono:</strong> ${member.phone}</p>
-      <a href="${member.website}" target="_blank">"${member.website}"</a>
-      <p class="membership">Membresía: ${getMembershipLevel(member.membership)}</p>
-      <p><strong>Descripción:</strong> ${member.description}</p>
+      <div class="member-row">
+        <img src="${member.image}" alt="Logo de ${member.name}" loading="lazy">
+        <div class="name">${member.name}</div>
+        <div class="address">${member.address}</div>
+        <div class="phone">${member.phone}</div>
+        <div class="link"><a href="${member.website}" target="_blank">"${member.website}"</a></div>
+        <div class="membership">${getMembershipLevel(member.membership)}</div>
+        <div class="description">${member.description}</div>
+      </div>
     `;
     membersSection.appendChild(card);
   });
