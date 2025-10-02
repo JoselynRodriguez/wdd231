@@ -85,7 +85,7 @@ button:hover {
   background-color: #e420ca;
 }
 
-div img {
+section img {
     max-width: 40rem;
     max-height: fit-content;
     align-items: center;
