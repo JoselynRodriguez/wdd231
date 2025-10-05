@@ -17,7 +17,11 @@ const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
-const url = 'https://api.openweathermap.org/data/2.5/forecast?lat={12.0467}&lon={77.0431}&appid={dce3be4c106bea03439971ce1c3d3201}';
+const myLat = "12.0467";
+const myLon = "77.0431";
+const myKey = "dce3be4c106bea03439971ce1c3d3201";
+
+const myURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLon}&appid=${myKey}';
 
 
 
