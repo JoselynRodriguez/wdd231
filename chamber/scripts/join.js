@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
   
-const modal = document.querySelector("#signup");
+const modal = document.querySelector("#myModal");
 const openModal = document.querySelector(".open-button");
 const closeModal = document.querySelector(".close-button");
 
