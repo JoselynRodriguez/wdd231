@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <meta name="description" content="Chamber Home Page| WDD231">
+    <title>Join the Chamber of Commerce</title>
+    <meta name="description" content="Chamber Join Page| WDD231">
     <meta name="author" content="Joselyn Rodriguez">
-    <meta property="og:title" content="Chamber Home Page - Lima">
-    <meta property="og:description" content="The Chamber Home Page show us the principal page where we can see all the information related to the companies and the diferents options to join them.">
+    <meta property="og:title" content="Chamber Join Page - Lima">
+    <meta property="og:description" content="The Chamber Join Page show invites people to join Chamber of Commerce">
     <meta property="og:image" content="https://media.istockphoto.com/id/1143524635/photo/aerial-view-of-lima.jpg?s=612x612&w=0&k=20&c=t5ufnvKmqQDZsKLlcs6YoYZv2jJcCfXMd5zhf1aIDOY=">
     <meta property="og:url" content="https://joselynrodriguez.github.io/wdd231/chamber/index">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Playwrite+AU+QLD:wght@100..400&family=Roboto&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/homelarge.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/joinlarge.css">
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <header>
@@ -27,46 +27,38 @@
     </header>
     <nav id="navbar" class="navigation">
         <ul>
-            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
             <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
     <main>
-        <section class="hero">
-            <img src="images/heroimage.webp" alt="Hero Image">
-            <div class="cta">
-                <a href="join.html" class="button">Join the Chamber</a>
-            </div>
-        </section>
-        <section>
-            <div class="events">
-                <h2>Upcoming Events</h2>
-                <ul>
-                    <li>📅 October 10: Business Networking Breakfast</li>
-                    <li>📅 October 15: Digital Marketing Workshop</li>
-                </ul>
-            </div>
-        </section>
-        
-         <section class="weather">
-            <h2>Current Weather in Lima</h2>
-            <p>Temperature: <span id="current-temp"></span></p>
-            <figure>
-                <img id="weather-icon" src="" alt="">
-                <figcaption></figcaption>
-            </figure>
-            <div class="forecast">
-                <h3>3-Day Forecast</h3>
-                <ul id="forecast-list"></ul>
-            </div>
-        </section>
-        
-        <section class="spotlights">
-            <h2>Member Spotlights</h2>
-            <div id="spotlight-container" class="spotlight-grid"></div>
-        </section>
+        <h2>Membership Application</h2>
+
+        <form method="get" action="thankyou.html">
+            <label>First Name<input type="text" name="first" required autocomplete="given-name" title="First Name" /></label>
+            <label>Last Name<input type="text" name="last" required autocomplete="family-name" title="Last Name" /></label>
+            <label>Organizational Title<input type="text" name="orgTitle" autocomplete="organization-title" title="Organizational Title" pattern="[A-Za-z\\s\\-]{7,}" /></label>
+            <label>Email<input type="email" name="email" required autocomplete="email" title="Email Address" placeholder="example@domain.com" /></label>
+            <label>Mobile Phone<input type="tel" name="mobile" required autocomplete="tel" title="Mobile Phone" /></label>
+            <label>Organization Name<input type="text" name="organization" required autocomplete="organization" title="Organization Name" /></label>
+            <label>Membership Level
+                <select name="membership" title="Membership Level">
+                <option value="np">NP Membership</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+            <label>Description<textarea name="description" title="Organization Description"></textarea></label>
+            <input type="hidden" name="timestamp" id="timestamp"/>
+            <input type="submit" value="Join Now"/>
+        </form>
+
+        <h2>Membership Levels</h2>
+        <section class="membership-cards"></section>
+  </main>
             
     </main>
     <footer>
