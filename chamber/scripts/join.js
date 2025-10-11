@@ -14,13 +14,12 @@ navButton.addEventListener('click', () => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  // ⏱️ Set timestamp for form submission
   const timestampField = document.getElementById("timestamp");
   if (timestampField) {
     timestampField.value = new Date().toISOString();
   }
 
-  fetch("members.json")
+  fetch("data/members.json")
     .then((response) => response.json())
     .then((members) => {
       const container = document.querySelector(".membership-cards");
