@@ -49,8 +49,13 @@
     padding: 0.5rem;
     }
 
-    .membership-cards {
-        grid-template-columns: 1fr;
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    div{
+        margin: 1rem;
     }
 
 }
