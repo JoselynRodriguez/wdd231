@@ -20,26 +20,30 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
   
-const modal = document.querySelector("#non");
-const openModal = document.querySelector(".open-button");
-const closeModal = document.querySelector(".close-button");
+document.addEventListener("DOMContentLoaded", () => {
+  // Open modal when button is clicked
+  document.querySelectorAll(".open-button").forEach(button => {
+    button.addEventListener("click", () => {
+      const modalId = button.nextElementSibling.id;
+      const modal = document.getElementById(modalId);
+      modal.showModal();
+    });
+  });
 
-openModal.addEventListener("click", () => {
-  modal.showModal();
-});
+  // Close modal when ❌ is clicked
+  document.querySelectorAll(".close-button").forEach(button => {
+    button.addEventListener("click", () => {
+      const modal = button.closest("dialog");
+      modal.close();
+    });
+  });
 
-closeModal.addEventListener("click", () => {
-  modal.close();
-});
-
-const modal = document.querySelector("#bronze");
-const openModal = document.querySelector(".open-button");
-const closeModal = document.querySelector(".close-button");
-
-openModal.addEventListener("click", () => {
-  modal.showModal();
-});
-
-closeModal.addEventListener("click", () => {
-  modal.close();
+  // Optional: Close modal with Escape key
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      document.querySelectorAll("dialog").forEach(modal => {
+        if (modal.open) modal.close();
+      });
+    }
+  });
 });
