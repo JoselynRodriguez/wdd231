@@ -29,7 +29,6 @@
     .icons {
     display: flex;
     flex-direction: column;
-    size: 150px;
     align-items: center;
     padding: 2rem;
     
