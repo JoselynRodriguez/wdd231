@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
   
 document.addEventListener("DOMContentLoaded", () => {
-  // Open modal when button is clicked
   document.querySelectorAll(".open-button").forEach(button => {
     button.addEventListener("click", () => {
       const modalId = button.nextElementSibling.id;
@@ -30,20 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Close modal when ❌ is clicked
   document.querySelectorAll(".close-button").forEach(button => {
     button.addEventListener("click", () => {
       const modal = button.closest("dialog");
       modal.close();
     });
   });
-
-  // Optional: Close modal with Escape key
-  window.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      document.querySelectorAll("dialog").forEach(modal => {
-        if (modal.open) modal.close();
-      });
-    }
-  });
+    
 });
