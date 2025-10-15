@@ -1,4 +1,4 @@
-@media only screen and (min-width:38rem){
+@media only screen and (min-width:64rem){
 
     header, main, nav, footer {
         max-width: 1200px;
@@ -29,7 +29,6 @@
     .icons {
     display: flex;
     flex-direction: column;
-    size: 150px;
     align-items: center;
     padding: 2rem;
     

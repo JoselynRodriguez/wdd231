@@ -29,7 +29,6 @@
     .icons {
     display: flex;
     flex-direction: column;
-    size: 150px;
     align-items: center;
     padding: 2rem;
     
@@ -43,6 +42,21 @@
 
     .footeright{
     width: 250px;
+    }
+
+    .allplaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        margin: 0.7rem;
+    }
+
+    .allplaces div {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .allplaces div img {
+        margin-top: 1.3rem;
     }
 
 }
