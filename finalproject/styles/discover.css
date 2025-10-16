@@ -107,3 +107,98 @@ footer{
   height: 160%;
   padding: 0.1rem;
 }
+
+/* General page styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Main container */
+main {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+main h1 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    color: #34495e;
+}
+
+input[type="submit"] {
+    background-color: #e45af7;
+    color: rgb(92, 18, 92);
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 2rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #32d390;
+}
+.allplaces div {
+  margin: 1rem 8px;
+  border: 1px solid #999;
+  background-color: #e9dae7;
+  border-radius: 8px;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-areas:
+  "name"
+  "image"
+  "description"
+  "address";
+}
+
+.allplaces div h2 {
+  margin: 1rem 10px;
+  grid-area: name;
+}
+
+.allplaces div img {
+  width: 100%;
+  grid-area: image;
+}
+
+.allplaces div p {
+  margin: 1rem 10px;
+  grid-area: description;
+}
+
+.allplaces div address {
+  margin: 1rem 10px;
+  grid-area: address;
+}

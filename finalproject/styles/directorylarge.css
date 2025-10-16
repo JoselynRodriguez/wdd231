@@ -28,9 +28,9 @@
 
     .icons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
     
     }
 

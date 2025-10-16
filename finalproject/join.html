@@ -27,28 +27,29 @@
     </header>
     <nav id="navbar" class="navigation">
         <ul>
-            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
+            <li class="current"><a href="join.html">Join</a></li>
             <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
     <main>
         <div>
-            <h1>Membership Application</h1>
+            <h1>Join our Family</h1>
             <form method="get" action="thankyou.html">
                 <label>First Name<input type="text" name="first" required autocomplete="given-name" title="First Name"></label>
                 <label>Last Name<input type="text" name="last" required autocomplete="family-name" title="Last Name"></label>
-                <label>Organizational Title<input type="text" name="orgTitle" autocomplete="organization-title" title="Organizational Title" pattern="[A-Za-z\\s\\-]{7,}"></label>
+                <label>Age<input type="text" name="age" autocomplete="age" title="Age"></label>
                 <label>Email<input type="email" name="email" required autocomplete="email" title="Email Address" placeholder="example@domain.com"></label>
                 <label>Mobile Phone<input type="tel" name="mobile" required autocomplete="tel" title="Mobile Phone"></label>
-                <label>Organization Name<input type="text" name="organization" required autocomplete="organization" title="Organization Name"></label>
-                <label>Membership Level
-                    <select name="membership" title="Membership Level">
-                    <option value="np">NP Membership</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
+                <label>Organization Name
+                    <select name="ogrname" title="Organization Name">
+                        <option value="none"></option>
+                        <option value="non">Other</option>   
+                        <option value="mmjj">Young Women</option>
+                        <option value="hhjj">Young Men</option>
+                        <option value="sscc">Relief Society</option>
+                        <option value="qqee">Elder Quorum</option>
                     </select>
                 </label>
                 <label>Description<textarea name="description" title="Organization Description"></textarea></label>
@@ -56,52 +57,49 @@
                 <input type="submit" value="Join Now">
             </form>
         </div>
-        <div class="level">
-            <h2>Membership Levels</h2>
-            <h3>Non Profit Membership Level</h3>
-            <p>This is an example</p>
+        <div class="gifts">
+            <h2>Personal Development: Youth Guidebook</h2>
+            <h3>Spiritual</h3>
+            <p>Some ideas</p>
             <button class="open-button">Lear More</button>
-            <dialog id="non">
-                <h2>Non Profit Membership Level</h2>
-                <p>This is a modal dialog.</p>
+            <dialog id="spiritual">
+                <h2>Spiritual</h2>
+                <p>Keep a journal, pray every morning, study the scriptures daily, keep the Sabbath day holy</p>
                 <button class="close-button">❌</button>
             </dialog>
-            <h3>Bronze Membership Level</h3>
-            <p>This is an example</p>
+            <h3>Social</h3>
+            <p>Some ideas</p>
             <button class="open-button">Lear More</button>
-            <dialog id="bronze">
-                <h2>Bronze Membership Level</h2>
-                <p>This is a modal dialog.</p>
+            <dialog id="social">
+                <h2>Social</h2>
+                <p>Examples: Serve others, avoid gossip, make new friends</p>
                 <button class="close-button">❌</button>
             </dialog>
-            <h3>Silver Profit Membership Level</h3>
-            <p>This is an example</p>
+            <h3>Intellectual</h3>
+            <p>Some ideas</p>
             <button class="open-button">Lear More</button>
-            <dialog id="silver">
-                <h2>Silver Profit Membership Level</h2>
-                <p>This is a modal dialog.</p>
+            <dialog id="intellectual">
+                <h2>Intellectual</h2>
+                <p>Intellectual</p>
                 <button class="close-button">❌</button>
             </dialog>
-            <h3>Gold Profit Membership Level</h3>
-            <p>This is an example</p>
+            <h3>Physical</h3>
+            <p>Some ideas</p>
             <button class="open-button">Lear More</button>
-            <dialog id="gold">
-                <h2>Gold Profit Membership Level</h2>
-                <p>This is a modal dialog.</p>
+            <dialog id="physical">
+                <h2>Physical</h2>
+                <p>Examples: Make and eat healthy food, exercise, clean or improve your surroundings</p>
                 <button class="close-button">❌</button>
             </dialog>
         </div>
         
   </main>
-    </main>
-        
     <footer>
         <div class="icons">
             <h3>Canta Callao Young Women's Family</h3>
-            <a href="https://www.linkedin.com/in/joselyn-rodriguez-r-649410263" target="_blank"><img src="images/linkedin.svg" alt="LinkdIn" width="16" height="16"></a>
             <a href="" target="_blank"><img src="images/instagram.svg" alt="instagram" width="16" height="16"></a>
             <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
-            <p>WDD 231 Final Project<br>Joselyn Rodriguez<br>©️<span id="currentyear"></span></p>
+            <p>WDD 231 Final Project - Joselyn Rodriguez ©️<span id="currentyear"></span></p>
             <p><span id="lastModified"></span></p>
         </div>
     </footer>
