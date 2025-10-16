@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Young Women Canta Callao</title>
+    <meta name="description" content="Final Project| WDD231">
+    <meta name="author" content="Joselyn Rodriguez">
+    <meta property="og:title" content="Final Project - Young Women">
+    <meta property="og:description" content="This Page will show us the most important events and actualizations.">
+    <meta property="og:image" content="https://media.istockphoto.com/id/1143524635/photo/aerial-view-of-lima.jpg?s=612x612&w=0&k=20&c=t5ufnvKmqQDZsKLlcs6YoYZv2jJcCfXMd5zhf1aIDOY=">
+    <meta property="og:url" content="https://joselynrodriguez.github.io/wdd231/finalproject/index">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Playwrite+AU+QLD:wght@100..400&family=Roboto&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/joinlarge.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/house.svg" alt="site logo" width="512" height="512">
+        <span>Canta Callao Young Women's Family</span>
+        <button id="navbutton" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="navbar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h1>Membership Application</h1>
+            <form method="get" action="thankyou.html">
+                <label>First Name<input type="text" name="first" required autocomplete="given-name" title="First Name"></label>
+                <label>Last Name<input type="text" name="last" required autocomplete="family-name" title="Last Name"></label>
+                <label>Organizational Title<input type="text" name="orgTitle" autocomplete="organization-title" title="Organizational Title" pattern="[A-Za-z\\s\\-]{7,}"></label>
+                <label>Email<input type="email" name="email" required autocomplete="email" title="Email Address" placeholder="example@domain.com"></label>
+                <label>Mobile Phone<input type="tel" name="mobile" required autocomplete="tel" title="Mobile Phone"></label>
+                <label>Organization Name<input type="text" name="organization" required autocomplete="organization" title="Organization Name"></label>
+                <label>Membership Level
+                    <select name="membership" title="Membership Level">
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label>Description<textarea name="description" title="Organization Description"></textarea></label>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Join Now">
+            </form>
+        </div>
+        <div class="level">
+            <h2>Membership Levels</h2>
+            <h3>Non Profit Membership Level</h3>
+            <p>This is an example</p>
+            <button class="open-button">Lear More</button>
+            <dialog id="non">
+                <h2>Non Profit Membership Level</h2>
+                <p>This is a modal dialog.</p>
+                <button class="close-button">❌</button>
+            </dialog>
+            <h3>Bronze Membership Level</h3>
+            <p>This is an example</p>
+            <button class="open-button">Lear More</button>
+            <dialog id="bronze">
+                <h2>Bronze Membership Level</h2>
+                <p>This is a modal dialog.</p>
+                <button class="close-button">❌</button>
+            </dialog>
+            <h3>Silver Profit Membership Level</h3>
+            <p>This is an example</p>
+            <button class="open-button">Lear More</button>
+            <dialog id="silver">
+                <h2>Silver Profit Membership Level</h2>
+                <p>This is a modal dialog.</p>
+                <button class="close-button">❌</button>
+            </dialog>
+            <h3>Gold Profit Membership Level</h3>
+            <p>This is an example</p>
+            <button class="open-button">Lear More</button>
+            <dialog id="gold">
+                <h2>Gold Profit Membership Level</h2>
+                <p>This is a modal dialog.</p>
+                <button class="close-button">❌</button>
+            </dialog>
+        </div>
+        
+  </main>
+    </main>
+        
+    <footer>
+        <div class="icons">
+            <h3>Canta Callao Young Women's Family</h3>
+            <a href="https://www.linkedin.com/in/joselyn-rodriguez-r-649410263" target="_blank"><img src="images/linkedin.svg" alt="LinkdIn" width="16" height="16"></a>
+            <a href="" target="_blank"><img src="images/instagram.svg" alt="instagram" width="16" height="16"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <p>WDD 231 Final Project<br>Joselyn Rodriguez<br>©️<span id="currentyear"></span></p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html
