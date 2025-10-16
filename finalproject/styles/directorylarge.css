@@ -40,8 +40,52 @@
     padding: 0.5rem;
     }
 
-    .footeright{
-    width: 250px;
+    .grid .member-card {
+    text-align: center;
+    }
+    .grid .member-card img {
+    display: block;
+    margin: 0 auto;
+}
+
+    .list .member-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+    background-color: #bffaed;
+    }
+
+    .list .member-card a:hover {
+    text-decoration: underline;
+    }
+
+    .list .member-card {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    }
+
+    .list .member-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr 2fr;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(190, 247, 247);
+    }
+
+    .list .column {
+    font-size: 0.95em;
+    color: #333;
+    overflow-wrap: break-word;
+    }
+
+    .list .column.name {
+    font-weight: bold;
+    color: #0077b6;
     }
 
 }
+
