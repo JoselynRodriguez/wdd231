@@ -21,7 +21,8 @@ const myLat = "12.0467";
 const myLon = "77.0431";
 const myKey = "dce3be4c106bea03439971ce1c3d3201";
 
-const myURL = 'api.openweathermap.org/data/2.5/forecast?lat={myLat}&lon={myLon}&appid={mykey}';
+const myURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}&units=metric`;
+
 
 
 
